@@ -74,10 +74,10 @@ body {
   background: url(http://7o52me.com1.z0.glb.clouddn.com/nanjcity.jpg) center 0 no-repeat fixed;
   background-size: 100%;
   color: #fff;
-  text-shadow: 0px 1px 1px rgba(0,0,0,.8);
+  text-shadow: 0px 1px 1px rgba(0,0,0,.9);
 }
 .site-wrapper-1 .site-wrapper-inner {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0,0,0,.3);
 }
 .sw-2 {
   background: #fff;
