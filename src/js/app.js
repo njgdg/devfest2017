@@ -1,17 +1,17 @@
 $(document).ready(function(){
-  var $doc = $(this);
-  var $win = $(window);
-  var $body = $('body');
-  var winH = $win.height();
-  var $screen1 = $('#S1');
-  var $screen1Inner = $screen1.children();
-  var $screen3 = $('#S3');
-  var $screen3Inner = $screen3.children();
-  var $screen2 = $('#S2');
-  var s2H = $screen2.height();
-  var $preload = $('.preload');
-  var img1Url = $preload.children()[0].src;
-  var img2Url = $preload.children()[1].src;
+  // var $doc = $(this);
+  // var $win = $(window);
+  // var $body = $('body');
+  // var winH = $win.height();
+  // var $screen1 = $('#S1');
+  // var $screen1Inner = $screen1.children();
+  // var $screen3 = $('#S3');
+  // var $screen3Inner = $screen3.children();
+  // var $screen2 = $('#S2');
+  // var s2H = $screen2.height();
+  // var $preload = $('.preload');
+  // var img1Url = $preload.children()[0].src;
+  // var img2Url = $preload.children()[1].src;
 
   function initMap (data) {
     if (!data) {
@@ -72,18 +72,18 @@ $(document).ready(function(){
   //   e.preventDefault();
   // });
 
-  $body.css('background-image', 'url('+ img1Url +')');
-  $doc.on('scroll', function(e){
-    var st = $doc.scrollTop();
-    $screen1Inner.css('background-color', 'rgba(0,0,0,'+ st/s2H +')');
-    if (st >= s2H) {
-      $body.css('background-image', 'url('+ img2Url +')');
-      $screen3Inner.css('background-color', 'rgba(0,0,0,'+ (st-winH-s2H)/winH +')');
-    } else {
-      $body.css('background-image', 'url('+ img1Url +')');
-    }
-    e.preventDefault();
-  });
+  // $body.css('background-image', 'url('+ img1Url +')');
+  // $doc.on('scroll', function(e){
+  //   var st = $doc.scrollTop();
+  //   $screen1Inner.css('background-color', 'rgba(0,0,0,'+ st/s2H +')');
+  //   if (st >= s2H) {
+  //     $body.css('background-image', 'url('+ img2Url +')');
+  //     $screen3Inner.css('background-color', 'rgba(0,0,0,'+ (st-winH-s2H)/winH +')');
+  //   } else {
+  //     $body.css('background-image', 'url('+ img1Url +')');
+  //   }
+  //   e.preventDefault();
+  // });
 
   // 地图
   initMap();
