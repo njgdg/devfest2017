@@ -70,7 +70,7 @@ body {
   vertical-align: top;
 }
 .site-wrapper-1 {
-  box-shadow: inset 0 0 1000px rgba(0,0,0,1);
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,1);*/
   background: url(http://7o52me.com1.z0.glb.clouddn.com/nanjcity.jpg) center 0 no-repeat fixed;
   background-size: cover;
   color: #fff;
@@ -87,7 +87,7 @@ body {
 }
 .sw-3 {
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-  background: url(../img/screen-1.jpg) center 0 no-repeat fixed;
+  background: url(../img/2016ap.jpg) center 0 no-repeat fixed;
   background-size: cover;
   color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
