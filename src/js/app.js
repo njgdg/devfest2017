@@ -1,18 +1,4 @@
 $(document).ready(function(){
-  // var $doc = $(this);
-  // var $win = $(window);
-  // var $body = $('body');
-  // var winH = $win.height();
-  // var $screen1 = $('#S1');
-  // var $screen1Inner = $screen1.children();
-  // var $screen3 = $('#S3');
-  // var $screen3Inner = $screen3.children();
-  // var $screen2 = $('#S2');
-  // var s2H = $screen2.height();
-  // var $preload = $('.preload');
-  // var img1Url = $preload.children()[0].src;
-  // var img2Url = $preload.children()[1].src;
-
   function initMap (data) {
     if (!data) {
       data = {};
@@ -46,7 +32,7 @@ $(document).ready(function(){
 
     var info = [];
     info.push("<div style=\"font-size:16px;line-height: 1.8\">"+ data.title);
-    info.push("<div style=\"font-size:14px;\">地址："+ data.address +"</div></div>")
+    info.push("<div style=\"font-size:14px;\">"+ data.address +"</div></div>")
 
     var inforWindow = new AMap.InfoWindow({
       offset:new AMap.Pixel(0,-23),
@@ -58,32 +44,6 @@ $(document).ready(function(){
     });
     inforWindow.open(mapObj,marker.getPosition());
   }
-  // 滚屏
-  // $doc.on('scroll', function(e){
-  //   var st = $doc.scrollTop();
-  //   $screen1.css('background-position', 'center ' + Math.floor(st/2) + 'px');
-  //   $screen1Inner.css('background-color', 'rgba(0,0,0,'+ st/winH +')');
-  //   if (st >= winH + s2H) {
-  //     $screen3.css('background-position', 'center ' + Math.floor(st - winH - s2H)/1.5 + 'px');
-  //     $screen3Inner.css('background-color', 'rgba(0,0,0,'+ (st-winH-s2H)/winH +')');
-  //   } else {
-  //     $screen3.css('background-position', 'center 0');
-  //   }
-  //   e.preventDefault();
-  // });
-
-  // $body.css('background-image', 'url('+ img1Url +')');
-  // $doc.on('scroll', function(e){
-  //   var st = $doc.scrollTop();
-  //   $screen1Inner.css('background-color', 'rgba(0,0,0,'+ st/s2H +')');
-  //   if (st >= s2H) {
-  //     $body.css('background-image', 'url('+ img2Url +')');
-  //     $screen3Inner.css('background-color', 'rgba(0,0,0,'+ (st-winH-s2H)/winH +')');
-  //   } else {
-  //     $body.css('background-image', 'url('+ img1Url +')');
-  //   }
-  //   e.preventDefault();
-  // });
 
   // 地图
   initMap();
